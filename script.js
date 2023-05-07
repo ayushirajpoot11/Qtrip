@@ -23,6 +23,7 @@ $(
     function () {
         $("#header").load("header.html")
         $("#footer").load("footer.html")
+        $("#carousel").load("carousel.html")
 
     }
 )
@@ -38,3 +39,7 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
+function thanks(){
+    swal("Thank You!", "Hope you enjoyed !!!","success");
+
+}

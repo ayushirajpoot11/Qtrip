@@ -53,13 +53,16 @@ a.navbar-brand{
 }
 
 .imgs img{
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4); 
+    box-shadow: 3px 3px 4px rgba(202, 0, 0, 0.4); 
     border-radius: 14px;
     margin: 15px;
 }
 
 .navbar-brand{
     margin-left: 20px;
+}
+.navbar-toggler{
+    margin-right: 35px;
 }
 
 .imgs{
@@ -98,7 +101,7 @@ footer a{
 }
 
 #header{
-    margin-bottom: 12vh;
+    margin-bottom: 16vh;
     background-color: rgb(64, 61, 61);
 
 }
@@ -119,10 +122,6 @@ footer a{
     margin-bottom: 10vh;
 }
 
-.shadow{
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4); 
-    border-radius: 14px;
-}
 .admain{
     border-radius: 14px;
     margin: 8vh 0;
@@ -139,4 +138,101 @@ footer a{
 }
 .sold a{
     color: rgb(242, 66, 7);
+}
+.mup,.mdown{
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+}
+.pcon{
+    width: 50vw;
+}
+.shadow,.pshadow{
+    box-shadow: 3px 3px 4px rgba(187, 4, 4, 0.4); 
+    border-radius: 14px;
+}
+.pinput input[type=text],.pinput textarea[type=text]{
+    background: transparent;
+}
+.pinput .plevel{
+    background-color: rgb(112, 231, 173);
+}
+/* .social-list li{
+    display: inline-block;
+    padding: 10px;
+} */
+.card{
+    border:none;
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+.card:before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#E1BEE7;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+.card:after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#8E24AA;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+.card:hover::after{
+    transform:scaleY(1);
+}
+.fonts{
+    font-size:11px;
+}
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+.social-list li{
+    padding:10px;
+    color:#8E24AA;
+    font-size:19px;
+}
+
+.buttons button:nth-child(1){
+    border:1px solid #8E24AA !important;
+    color:#8E24AA;
+    height:40px;
+}
+.buttons button a{
+   color: #8E24AA;
+   text-decoration: none;
+}
+
+.buttons button:nth-child(1):hover {
+    border:1px solid #8E24AA !important;
+    height:40px;
+    background-color:#8E24AA;
+}
+.buttons button:nth-child(1):hover > a {
+    color:#fff;
+}
+.buttons button:nth-child(2){
+    border:1px solid #8E24AA !important;
+    background-color:#8E24AA;
+    color:#fff;
+     height:40px;
+}
+.footerlink a:hover{
+    color: #8E24AA;
 }
