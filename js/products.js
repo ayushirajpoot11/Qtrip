@@ -192,7 +192,7 @@ function sorted(category) {
                     <hr />
                     <p class="product__desc">${updatedDesc}</p>
                 </a>
-                <a href="#" class="product__cart btn cart">${category}</a>
+                <a href="#" class="product__cart btn cart">To Cart</a>
                 <a href="#" class="product__btn btn">Buy Now</a>
             </div>
             `;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 500vh;
+        }
+        nav{
+            --variable : 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: relative;
+            top: var(--variable);
+            scroll-behavior: smooth;
+            /* transition: all 0.1s ease-in-out; */
+        }
+        .nav.active{
+
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        nav
+    </nav>
+    <div id="text">hello</div>
+    <script>
+        let lastScrollTop = 0;
+        let nav = document.getElementById("nav");
+        window.addEventListener("scroll",function(){
+            let currentScroll = window.scrollY;
+            
+            if(currentScroll > lastScrollTop){
+                nav.style.display = 'none';
+            }else{
+                nav.style.display = 'flex';
+            }
+            console.log(currentScroll + " " + lastScrollTop)
+            lastScrollTop = currentScroll;
+            nav.style.setProperty("--variable",`${currentScroll}px`)
+        })
+    </script>
+</body>
+</html>
