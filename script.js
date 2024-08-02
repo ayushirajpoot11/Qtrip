@@ -1,9 +1,3 @@
-{/* <div class="col-md-4 col-sm-6 col-lg-3 m-auto mt-4 imgs">
-<img src="https://picsum.photos/230/300?random=1" alt="1">
-</div> */}
-
-// let number = 12;
-// let number = document.getElementById("number").value;
 
 function loadImages(number) {
     let a = document.getElementById("loadimg")
